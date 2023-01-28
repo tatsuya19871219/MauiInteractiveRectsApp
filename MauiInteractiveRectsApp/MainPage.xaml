@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiInteractiveRectsApp.MainPage"
+             xmlns:custom="clr-namespace:MauiInteractiveRectsApp.CustomViews"
+             Shell.NavBarIsVisible="false">
+
+    <VerticalStackLayout HorizontalOptions="Center">
+        
+        <Label x:Name="StatusLabel" 
+               HeightRequest="{Binding HeaderHeight}"
+               FontSize="24" 
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        <custom:TiledInteractiveRectangles x:Name="MyTile" 
+                                           HeightRequest="{Binding BodyHeight}"
+                                           WidthRequest="{Binding AppWidth}"
+                                           BackgroundColor="White"/>
+        <BoxView x:Name="FooterBoxView" 
+                 Color="LightPink" 
+                 HeightRequest="{Binding FooterHeight}" WidthRequest="{Binding AppWidth}"/>
+        
+    </VerticalStackLayout>
+    
+</ContentPage>
