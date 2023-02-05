@@ -2,6 +2,24 @@
 
 An application that rotates each square tile by tracing the shape with touch (Android) or mouse hover (Windows).
 
+## Files edited
+ - CustomViews/
+     - [InteractiveRectangle.cs](./MauiInteractiveRectsApp/CustomViews/InteractiveRectangle.cs)
+     - [TiledInteractiveRectangles.xaml](./MauiInteractiveRectsApp/CustomViews/TiledInteractiveRectangles.xaml)
+     - [TiledInteractiveRectangles.xaml.cs](./MauiInteractiveRectsApp/CustomViews/TiledInteractiveRectangles.xaml.cs)
+ - Platforms/
+     - Android/
+         - [TouchTracker.cs](./MauiInteractiveRectsApp/Platforms/Android/TouchTracker.cs)
+     - Windows/
+         - [TouchTracker.cs](./MauiInteractiveRectsApp/Platforms/Windows/TouchTracker.cs)
+ - Services/
+     - [TouchTracker.cs](./MauiInteractiveRectsApp/Services/TouchTracker.cs)
+ - ViewModels/
+     - [AppViewModel.cs](./MauiInteractiveRectsApp/ViewModels/AppViewModel.cs)
+ - [MainPage.xaml](./MauiInteractiveRectsApp/MainPage.xaml)
+ - [MainPage.xaml.cs](./MauiInteractiveRectsApp/MainPage.xaml.cs)
+ - [MauiProgram.cs](./MauiInteractiveRectsApp/MauiProgram.cs)
+
 ## What I learnt from this project
 
 - How to manipulate shapes (Translation, Rotation, etc.) 
